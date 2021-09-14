@@ -1,0 +1,25 @@
+{
+  "name": "webpack-exploration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldenning/webpack-exploration.git"
+  },
+  "author": "Joel Denning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joeldenning/webpack-exploration/issues"
+  },
+  "homepage": "https://github.com/joeldenning/webpack-exploration#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
