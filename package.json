@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/joeldenning/webpack-exploration#readme",
   "devDependencies": {
+    "@types/webpack": "^5.28.0",
+    "html-webpack-plugin": "^5.3.2",
     "rimraf": "^3.0.2",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
   }
 }
