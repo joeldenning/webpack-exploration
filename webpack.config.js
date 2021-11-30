@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 /**
  * @type {import('@types/webpack').Configuration}
@@ -19,6 +20,14 @@ const config = {
         test: /\.(j|t)sx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader'
+        ]
       }
     ]
   },
@@ -27,7 +36,8 @@ const config = {
       template: path.resolve(__dirname, 'src/index.ejs'),
       inject: true
     }),
-    new ForkTsCheckerWebpackPlugin()
+    new ForkTsCheckerWebpackPlugin(),
+    new MiniCssExtractPlugin(),
   ]
 }
 

@@ -16,17 +16,26 @@
   "bugs": {
     "url": "https://github.com/joeldenning/webpack-exploration/issues"
   },
+  "browserslist": [
+    "last 20 Firefox versions"
+  ],
   "homepage": "https://github.com/joeldenning/webpack-exploration#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "@types/webpack": "^5.28.0",
+    "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
     "fork-ts-checker-webpack-plugin": "^6.4.0",
     "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.4.4",
+    "postcss-loader": "^6.2.0",
     "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
     "typescript": "^4.4.4",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"
